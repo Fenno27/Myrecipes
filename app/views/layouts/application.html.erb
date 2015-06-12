@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyRecipe</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <%= link_to "MyRecipe"," ",class: "btn btn-lg btn-success" ,id: "logo" %>
+      <dvi class="nav_item">
+        <%= link_to "link1"," ",class: "btn btn-default btn-warning" %>
+      </dvi>
+      <dvi class="nav_item">
+        <%= link_to "link2"," ",class: "btn btn-default btn-warning" %>
+      </dvi>
+      <dvi class="nav_item">
+        <%= link_to "link3"," ",class: "btn btn-default btn-warning" %>
+      </dvi>
+    </div>
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
+  <dvi class="footer">
+    <p>&copy; MyRecipe2015</p>
+  </dvi>
+
+
+</body>
+</html>
